@@ -2,6 +2,8 @@
 
 These are the improvements that can raise reporting quality and CRM usefulness without forcing a full lifecycle redesign first.
 
+These wins are the current CRM-phase improvements inside the broader approved growth-readiness project. The point is to clean the CRM and reporting layer so it can reconnect cleanly to website, Google Analytics, Meta/Facebook/Instagram, lead capture, and leadership dashboards.
+
 | Win | Why it is safe now | Expected value | Effort | Dependency |
 | --- | --- | --- | --- | --- |
 | Build a weekly missing-source cleanup queue | Source completeness is observable today. | Better attribution trust and cleaner channel reporting. | Low | Access to source fields. |

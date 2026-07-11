@@ -2,6 +2,8 @@
 
 Use this file to analyze the pre-active funnel. Keep patient-census questions out of this document unless the underlying definition is signed.
 
+This is the lead and referral layer of the broader approved growth-readiness system. Use it to connect campaign, website, referral, and CRM flow rather than treating pre-active movement as a CRM-only question.
+
 ## Working flow
 
 Lead -> Qualifying -> Referral -> Active

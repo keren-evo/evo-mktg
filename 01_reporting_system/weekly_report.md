@@ -2,6 +2,8 @@
 
 Use this for the weekly leadership summary. Prioritize safe KPIs first, then include directional metrics only when the caveat matters to the decision.
 
+This template currently emphasizes the CRM, referral, and attribution layer of the approved growth-readiness system. Over time it should absorb trusted website, Google Analytics, Meta/Facebook/Instagram, and broader campaign-performance reporting.
+
 ## Executive summary
 - Wins:
 - Risks:

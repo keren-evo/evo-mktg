@@ -2,6 +2,8 @@
 
 Use this file before filling any report, scorecard, or dashboard. The point is to separate trusted reporting from metrics that are still blocked by business-definition or CRM-model uncertainty.
 
+This file covers the CRM and referral-reporting layer of the broader approved growth-readiness system. It should eventually connect back to website analytics, Google Analytics, Meta/Facebook/Instagram activity, and leadership dashboard reporting.
+
 ## Safe to report now
 
 ### Attribution hygiene

@@ -3,6 +3,8 @@
 Date pulled: July 11, 2026  
 Source: live Nexus CRM `report.run` queries against saved reports
 
+Scope note: this is a CRM-only snapshot inside the broader approved growth-readiness project. It does not yet include website, Google Analytics, Facebook/Instagram, or leadership dashboard data.
+
 ## Executive summary
 
 - Lead volume is measurable right now from the existing saved reports.
@@ -10,6 +12,7 @@ Source: live Nexus CRM `report.run` queries against saved reports
 - Campaign attribution is effectively unusable in the current saved lead reports because the campaign field is blank on every returned lead.
 - There is already a meaningful pre-active workflow backlog and a very large status-contradiction queue.
 - Referral-side source reporting is only partially usable from the current saved report inventory and needs either paged export or a purpose-built referral report.
+- This is the CRM layer of the approved project, not the whole approved system.
 
 ## Lead counts
 
@@ -108,6 +111,7 @@ Treat that as directional only until the full referral report is pulled cleanly.
 - Missing source is already large enough to distort marketing visibility.
 - Missing campaign on all returned lead records means campaign ROI cannot be trusted from the current CRM lead reports.
 - Pre-active follow-up and dropped-intake queues are large enough to justify immediate cleanup and accountability reporting.
+- Once the CRM layer is cleaner, the next step is reconnecting it to website, Google Analytics, Facebook/Instagram, and leadership dashboard visibility.
 
 ## Caveats
 

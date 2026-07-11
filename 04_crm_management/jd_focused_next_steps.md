@@ -5,13 +5,16 @@ This keeps the next phase anchored to the main role, not to a full CRM rebuild.
 ## Main job to protect
 
 The core role is still:
+- website and traffic visibility
+- Meta / Facebook / Instagram tracking
 - analytics
 - campaign tracking
 - attribution quality
+- lead capture and CRM integration
 - leadership-ready reporting
 - visibility into lead and referral performance
 
-The status project matters because it affects reporting trust, but it should stay in service of the main job.
+The approved proposal was a broader growth-readiness system. The status project matters because it affects reporting trust, but it should stay in service of that broader job rather than replace it.
 
 ## Immediate next steps
 
@@ -41,6 +44,11 @@ The status project matters because it affects reporting trust, but it should sta
 - list unresolved questions
 - do not overbuild architecture, dashboards, or automation before the business meaning is confirmed
 
+### 5. Reconnect CRM back to the approved growth system
+- once CRM reporting is stable enough, reconnect it to website tracking
+- reconnect it to Meta / Facebook / Instagram attribution
+- reconnect it to lead capture visibility and leadership dashboard reporting
+
 ## What success looks like in the next pass
 
 - You can explain the current lifecycle in plain English.
@@ -48,14 +56,18 @@ The status project matters because it affects reporting trust, but it should sta
 - You can show a 30-day view of attribution and follow-up health.
 - You can separate true analytics work from owner-held status decisions.
 - You can bring Avi a shorter, clearer set of unresolved questions.
+- You can see how the CRM layer plugs back into the broader website, Meta, lead-capture, and leadership reporting system.
 
 ## Decision rule
 
 If a task improves:
+- website tracking visibility
+- Meta / Facebook / Instagram attribution
 - source tracking
 - campaign visibility
 - referral visibility
 - export trust
+- leadership dashboard readiness
 - or follow-up discipline
 
 it is probably aligned with the main JD.

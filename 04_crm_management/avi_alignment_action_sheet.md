@@ -4,13 +4,19 @@ This is the simplified working sheet that comes out of the July 10 alignment wit
 
 ## Main JD focus
 
-The original job focus was:
-- website setup
-- social media and campaign tracking
-- analytics
-- improved campaign attribution
+The approved proposal was a broader growth-readiness build:
+- website traffic and referrals
+- tracking across website, Facebook/Instagram, and CRM
+- lead capture
+- CRM intake and cleanup
+- Meta optimization
+- leadership dashboard visibility
 
-The working CRM contribution should support that JD by making exports, reporting, and attribution more trustworthy. It should not drift into full CRM redesign before the business meaning is clear.
+The expected working lane was therefore wider than CRM alone: website analytics, social and Meta tracking, campaign attribution, lead capture, CRM integration, and leadership reporting.
+
+After a conversation with Hillel, the work shifted into CRM-first investigation. That made the day-to-day work much more status-heavy than the original approved proposal.
+
+The working CRM contribution should improve exports, reporting, and attribution enough to plug back into the broader growth system. It should not drift into full CRM redesign before the business meaning is clear.
 
 ## Immediate objective
 
@@ -20,6 +26,8 @@ Understand how the current patient and referral lifecycle works well enough to a
 - what is already agreed
 - what is still unresolved
 - whether the proposed structure will support reliable reporting and exports
+
+This is the current CRM phase inside the broader approved growth-readiness project, not a replacement for it.
 
 ## Current state to document
 
@@ -105,7 +113,7 @@ Understand how the current patient and referral lifecycle works well enough to a
 
 ## 30-day CRM pull for the main JD
 
-The first 30-day pull should focus on the main job, not the whole lifecycle redesign.
+The first 30-day pull is the CRM slice of the broader approved project. It should focus on the main job, not the whole lifecycle redesign.
 
 ### Pull these if available
 - leads created
@@ -127,6 +135,8 @@ The first 30-day pull should focus on the main job, not the whole lifecycle rede
 - Which referral sources are active?
 - Where are follow-ups being missed or delayed?
 - Which status buckets are too messy to trust for reporting?
+
+Once this CRM slice is stable enough, reconnect it to website tracking, Meta/Facebook/Instagram attribution, and leadership dashboard reporting.
 
 ### Do not use the first 30-day pull to overclaim
 - true active census

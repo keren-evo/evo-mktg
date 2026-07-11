@@ -2,6 +2,8 @@
 
 Use this for decision-safe daily reporting. Check [kpi_dictionary.md](./kpi_dictionary.md) and [metrics_readiness.md](./metrics_readiness.md) before filling it in.
 
+This template is the daily CRM and referral-reporting layer of the broader approved growth-readiness system. Extend it with website, Google Analytics, Meta/Facebook/Instagram, and campaign-performance inputs as those layers become reliable.
+
 ## Executive snapshot
 - What changed today:
 - What needs attention now:

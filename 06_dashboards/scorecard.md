@@ -2,6 +2,8 @@
 
 Use this only for metrics that are stable enough to drive decisions. If a metric is still directionally useful but not settled, place it in the directional section instead of the core scorecard.
 
+This scorecard is the CRM and reporting core of the broader approved growth-readiness system. It should eventually sit alongside trusted website, Google Analytics, Meta/Facebook/Instagram, and channel-performance scorecards.
+
 ## Trusted KPI scorecard
 | Metric | Target | Actual | Status | Readiness |
 |--------|--------|--------|--------|--------|

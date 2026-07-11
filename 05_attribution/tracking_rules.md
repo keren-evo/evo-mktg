@@ -1,5 +1,7 @@
 # Attribution Rules
 
+These rules support the broader approved growth-readiness system by connecting website activity, Meta/Facebook/Instagram engagement, lead capture, referral tracking, and CRM reporting into one attribution chain.
+
 ## Required Fields (Nexus CRM)
 - Lead Source
 - Campaign Name

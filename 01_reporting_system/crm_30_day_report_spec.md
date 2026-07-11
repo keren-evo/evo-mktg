@@ -2,6 +2,10 @@
 
 This is the first report to pull once CRM access is working. It is intentionally tied to the main job description, not to the full status-redesign effort.
 
+## How this fits the approved project
+
+This is the CRM slice of the broader approved growth-readiness proposal. It is a first pass meant to stabilize CRM visibility before reconnecting the data to website tracking, Facebook/Instagram activity, lead capture, and leadership dashboard reporting.
+
 ## Report purpose
 
 Use the past 30 days to answer:

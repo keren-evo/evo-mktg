@@ -5,6 +5,19 @@ Analyze this dataset and:
 - Highlight ROI issues
 - Recommend actions
 
+## Growth readiness
+Review this initiative as one connected system:
+- website traffic and lead capture
+- Meta/Facebook/Instagram tracking
+- CRM attribution and workflow visibility
+- referral flow
+- leadership reporting
+
+Explain:
+- what is already connected
+- what is still broken
+- what should be fixed first
+
 ## CRM Audit
 Review this Nexus CRM export:
 - Find missing data

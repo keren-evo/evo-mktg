@@ -2,6 +2,8 @@
 
 Use this file with [metrics_readiness.md](./metrics_readiness.md). A KPI belongs in leadership reporting only if its business meaning is stable enough for a decision.
 
+This dictionary currently reflects the CRM slice of the approved growth-readiness project. As the broader system reconnects, pair these KPIs with website, Google Analytics, Meta/Facebook/Instagram, and leadership dashboard metrics.
+
 ## Safe KPIs
 
 | KPI | Plain-English definition | Primary use | Cadence | Readiness | Notes |

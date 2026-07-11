@@ -2,6 +2,8 @@
 
 Use this audit to surface data-quality and workflow issues without pretending the whole lifecycle model is settled.
 
+This audit covers the CRM layer of the approved growth-readiness system. Its purpose is to make CRM and reporting reliable enough to support broader website, Google Analytics, Meta/Facebook/Instagram, and leadership visibility work.
+
 ## Attribution hygiene
 - Lead source coverage:
 - Campaign coverage:

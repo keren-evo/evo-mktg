@@ -1,5 +1,7 @@
 # AI Use Cases
 
+Use AI across the broader approved growth-readiness system, not only inside CRM. That includes website visibility, Meta/Facebook/Instagram, attribution, reporting, CRM workflows, and practical marketing execution.
+
 ## Reporting
 - Generate summaries
 - Identify trends

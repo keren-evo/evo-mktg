@@ -3,6 +3,9 @@
 This file separates what is known from what is assumed so analytics work can move without pretending the CRM model is already settled.
 
 ## Confirmed facts
+- An approved proposal existed for a broader growth-readiness system connecting website traffic, Facebook/Instagram activity, CRM integration, and leadership reporting.
+- The originally expected working lane leaned more toward website analytics, social and Meta tracking, attribution, and dashboards than CRM status design alone.
+- After a conversation with Hillel, the working focus shifted into CRM-first investigation.
 - The current role is expected to improve marketing visibility, CRM accuracy, attribution discipline, and leadership-ready reporting.
 - Nexus CRM uses a person or episode-style record that spans first contact, referral work, authorization, active service, and terminal outcomes.
 - The current system is mixing multiple business questions into too few status fields.
@@ -62,6 +65,8 @@ This file separates what is known from what is assumed so analytics work can mov
 - Attribution coverage, referral flow, follow-up gaps, and pre-active leakage can be measured now.
 - Census, conversion to active, and discharge reporting should not be treated as clean KPIs until definitions are signed.
 - Draft architecture notes are useful inputs, but they are not evidence on their own.
+- The current CRM artifacts are the present phase of the work, not the whole approved project.
+- CRM cleanup should ultimately reconnect to website tracking, Meta/Facebook/Instagram attribution, lead capture visibility, and leadership dashboard reporting.
 
 ## Source docs
 - [00_source/keren-overkill.md](../00_source/keren-overkill.md)
