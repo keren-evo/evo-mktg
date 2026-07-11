@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Low-risk wins | Evo MKT OS</title>
+    <link rel="stylesheet" href="../assets/site.css">
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <div class="topbar-inner">
+          <a class="brand" href="../index.html">OS Index</a>
+          <nav class="nav">
+            <a href="../all-docs.html">All docs</a>
+          </nav>
+        </div>
+      </header>
+      <div class="meta">04_crm_management/low_risk_wins.md</div>
+      <main class="page">
+        <section class="card">
+          <article>
+<h1 id="low-risk-wins">Low-risk wins</h1>
+<p>These are the improvements that can raise reporting quality and CRM usefulness without forcing a full lifecycle redesign first.</p>
+<p>These wins are the current CRM-phase improvements inside the broader approved growth-readiness project. The point is to clean the CRM and reporting layer so it can reconnect cleanly to website, Google Analytics, Meta/Facebook/Instagram, lead capture, and leadership dashboards.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Win</th>
+<th>Why it is safe now</th>
+<th>Expected value</th>
+<th>Effort</th>
+<th>Dependency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Build a weekly missing-source cleanup queue</td>
+<td>Source completeness is observable today.</td>
+<td>Better attribution trust and cleaner channel reporting.</td>
+<td>Low</td>
+<td>Access to source fields.</td>
+</tr>
+<tr>
+<td>Build a weekly missing-campaign cleanup queue</td>
+<td>Campaign coverage is observable today.</td>
+<td>Better CPL, CPA, and ROI interpretation.</td>
+<td>Low</td>
+<td>Campaign-tagging rules.</td>
+</tr>
+<tr>
+<td>Add referral-source completeness checks</td>
+<td>Referral-source coverage does not depend on final active-census logic.</td>
+<td>Better doctor, partner, and community-source visibility.</td>
+<td>Low</td>
+<td>Agreement on required referral-source field.</td>
+</tr>
+<tr>
+<td>Publish overdue follow-up watchlists</td>
+<td>Workflow discipline can be measured before lifecycle redesign.</td>
+<td>Reduces pre-active leakage and improves accountability.</td>
+<td>Low</td>
+<td>Next-follow-up field usage.</td>
+</tr>
+<tr>
+<td>Publish a contradiction queue</td>
+<td>Conflicting status combinations are visible even before final rules are signed.</td>
+<td>Gives Avi and ops a focused cleanup list.</td>
+<td>Medium</td>
+<td>Query or export access.</td>
+</tr>
+<tr>
+<td>Label metrics by readiness in reports</td>
+<td>This is a reporting practice change, not a CRM rebuild.</td>
+<td>Prevents bad decisions from unstable numbers.</td>
+<td>Low</td>
+<td>None.</td>
+</tr>
+<tr>
+<td>Separate authorized counts from active-patient reporting</td>
+<td>This is a framing fix first, not a schema change.</td>
+<td>Reduces false confidence in census and ops numbers.</td>
+<td>Low</td>
+<td>Leadership agreement on caveat language.</td>
+</tr>
+<tr>
+<td>Track pre-active leakage explicitly</td>
+<td>Loss before service is already a real business problem.</td>
+<td>Better source-quality and handoff insight.</td>
+<td>Medium</td>
+<td>Agreed leakage logic for watchlist use.</td>
+</tr>
+<tr>
+<td>Freeze manual overwrites of original source where possible</td>
+<td>Attribution protection is a narrow governance improvement.</td>
+<td>Preserves first-touch trust.</td>
+<td>Medium</td>
+<td>Process enforcement or CRM permissions.</td>
+</tr>
+<tr>
+<td>Create a baseline snapshot pack</td>
+<td>Baselines can be collected before the final redesign.</td>
+<td>Gives the team a before-and-after reference.</td>
+<td>Low</td>
+<td>Export access.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="suggested-first-sequence">Suggested first sequence</h2>
+<ol>
+<li>Freeze funnel + taxonomy (<a href="../01_reporting_system/funnel_definitions.html">funnel_definitions.md</a>, <a href="../05_attribution/tracking_rules.html">tracking_rules.md</a>, <a href="crm_required_fields.html">crm_required_fields.md</a>).</li>
+<li>Missing source and campaign cleanup queue (unknown source = defect).</li>
+<li>Overdue follow-up and missing next-action watchlists.</li>
+<li>Referral-source completeness check.</li>
+<li>Metric-readiness labeling in daily, weekly, and monthly reports.</li>
+<li>Contradiction queue for status cleanup.</li>
+<li>Dual-engine cost-per-SOC comparison once SOC extract is directional-trusted.</li>
+</ol>
+<h2 id="wins-to-avoid-for-now">Wins to avoid for now</h2>
+<ul>
+<li>Full status-model redesign.</li>
+<li>Decision-grade active census reporting.</li>
+<li>Final discharge or retention analysis.</li>
+<li>Any dashboard that hides caveats behind a clean-looking number.</li>
+</ul>
+          </article>
+        </section>
+      </main>
+      <footer class="footer">
+        Published from the repo markdown in <code>mktg-context</code>.
+      </footer>
+    </div>
+  </body>
+</html>

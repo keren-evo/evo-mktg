@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stakeholder decision map | Evo MKT OS</title>
+    <link rel="stylesheet" href="../assets/site.css">
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <div class="topbar-inner">
+          <a class="brand" href="../index.html">OS Index</a>
+          <nav class="nav">
+            <a href="../all-docs.html">All docs</a>
+          </nav>
+        </div>
+      </header>
+      <div class="meta">04_crm_management/stakeholder_decision_map.md</div>
+      <main class="page">
+        <section class="card">
+          <article>
+<h1 id="stakeholder-decision-map">Stakeholder decision map</h1>
+<p>Use this file when a reporting question turns into a process or CRM-design question. The goal is to identify who owns the meaning, who owns the build, and whether analytics can still move before the final decision lands.</p>
+<h2 id="core-roles">Core roles</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Primary responsibility</th>
+<th>Typical questions they should own</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Keren / analytics and CRM reporting</td>
+<td>Reporting logic, attribution trust, KPI framing, risk visibility.</td>
+<td>Can this metric be reported now? What caveat is needed? What cleanup backlog should exist?</td>
+</tr>
+<tr>
+<td>Joel / operational truth</td>
+<td>Real-world lifecycle meaning and edge-case behavior.</td>
+<td>What does <code>Active</code> mean? When is a case dropped versus discharged? What should happen in mixed LOB cases?</td>
+</tr>
+<tr>
+<td>Avi / CRM implementation</td>
+<td>Schema, picklists, automations, recalculation logic, migration safety.</td>
+<td>Can Nexus support this cleanly? Where should the field live? What can be validated or automated?</td>
+</tr>
+<tr>
+<td>Leadership</td>
+<td>Sign-off, phase gating, and decision-grade reporting thresholds.</td>
+<td>Is the framework settled enough for rollout? Which metrics are trusted enough for staffing or growth decisions?</td>
+</tr>
+<tr>
+<td>Intake and ops users</td>
+<td>Day-to-day workflow truth and practical usability.</td>
+<td>Does this status flow match real work? Which queues matter? Which fields will actually be maintained?</td>
+</tr>
+<tr>
+<td>Sales and growth users</td>
+<td>Source quality, follow-up discipline, and referral handling.</td>
+<td>Which definitions support channel performance and pipeline accountability?</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="recurring-issue-map">Recurring issue map</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Issue</th>
+<th>Business-meaning owner</th>
+<th>System-change owner</th>
+<th>Main report consumers</th>
+<th>Can reporting move now?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lead vs qualifying vs referral boundary</td>
+<td>Joel and sales/growth</td>
+<td>Avi</td>
+<td>Sales, growth, leadership</td>
+<td>Yes, directionally. Use clear caveats.</td>
+</tr>
+<tr>
+<td>Definition of <code>Active</code></td>
+<td>Joel and leadership</td>
+<td>Avi</td>
+<td>Leadership, ops, analytics</td>
+<td>No, not for decision-grade KPI use.</td>
+</tr>
+<tr>
+<td>Authorized vs active</td>
+<td>Joel and ops</td>
+<td>Avi</td>
+<td>Leadership, ops</td>
+<td>Yes for risk visibility, no for census reporting.</td>
+</tr>
+<tr>
+<td>Dropped off vs discharged</td>
+<td>Joel and ops</td>
+<td>Avi</td>
+<td>Leadership, ops, analytics</td>
+<td>Only directionally until terminal logic is signed.</td>
+</tr>
+<tr>
+<td>Referral outcome values</td>
+<td>Joel</td>
+<td>Avi</td>
+<td>Leadership, analytics</td>
+<td>No for clean reason-mix reporting.</td>
+</tr>
+<tr>
+<td>Source and campaign coverage</td>
+<td>Analytics and growth</td>
+<td>CRM admins or Avi</td>
+<td>Leadership, growth</td>
+<td>Yes. This should move now.</td>
+</tr>
+<tr>
+<td>Follow-up expectations and SLA</td>
+<td>Sales, intake, and ops</td>
+<td>Avi if automation is needed</td>
+<td>Frontline teams, analytics</td>
+<td>Yes. Track as workflow discipline.</td>
+</tr>
+<tr>
+<td>Primary LOB logic</td>
+<td>Joel and ops</td>
+<td>Avi</td>
+<td>Ops, leadership</td>
+<td>Only with caveat.</td>
+</tr>
+<tr>
+<td>Medicaid ticket handling</td>
+<td>Joel and Medicaid team</td>
+<td>Avi</td>
+<td>Intake, ops</td>
+<td>Yes, as a parallel workflow view.</td>
+</tr>
+<tr>
+<td>Dashboard trust threshold</td>
+<td>Leadership</td>
+<td>Avi for implementation, analytics for caveats</td>
+<td>Leadership</td>
+<td>Yes, if metrics are labeled by readiness.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="how-to-use-this-map">How to use this map</h2>
+<ul>
+<li>If the question is about meaning, route it to the business-meaning owner.</li>
+<li>If the question is about fields, picklists, validation, or automation, route it to the system-change owner.</li>
+<li>If the answer would change staffing, budget, or census interpretation, do not skip leadership sign-off.</li>
+<li>If reporting can move now, publish the metric with an explicit confidence or caveat note instead of waiting for the whole CRM redesign.</li>
+</ul>
+<h2 id="decision-rule-for-analytics-work">Decision rule for analytics work</h2>
+<ul>
+<li>Do not turn an owner-held decision into a silent assumption inside a dashboard.</li>
+<li>If a metric depends on an unresolved owner decision, either block it or downgrade it to directional use.</li>
+</ul>
+          </article>
+        </section>
+      </main>
+      <footer class="footer">
+        Published from the repo markdown in <code>mktg-context</code>.
+      </footer>
+    </div>
+  </body>
+</html>

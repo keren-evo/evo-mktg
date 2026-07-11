@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CRM 30-day report spec | Evo MKT OS</title>
+    <link rel="stylesheet" href="../assets/site.css">
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <div class="topbar-inner">
+          <a class="brand" href="../index.html">OS Index</a>
+          <nav class="nav">
+            <a href="../all-docs.html">All docs</a>
+          </nav>
+        </div>
+      </header>
+      <div class="meta">01_reporting_system/crm_30_day_report_spec.md</div>
+      <main class="page">
+        <section class="card">
+          <article>
+<h1 id="crm-30-day-report-spec">CRM 30-day report spec</h1>
+<p>This is the first report to pull once CRM access is working. It is intentionally tied to the main job description, not to the full status-redesign effort.</p>
+<h2 id="how-this-fits-the-approved-project">How this fits the approved project</h2>
+<p>This is the CRM slice of the broader approved growth-readiness proposal. It is a first pass meant to stabilize CRM visibility before reconnecting the data to website tracking, Facebook/Instagram activity, lead capture, and leadership dashboard reporting.</p>
+<h2 id="report-purpose">Report purpose</h2>
+<p>Use the past 30 days to answer:
+- what volume is coming in
+- where it is coming from
+- how complete attribution is
+- where follow-up is breaking
+- which status buckets are unsafe for decision-making</p>
+<h2 id="keep-the-scope-narrow">Keep the scope narrow</h2>
+<p>This report is for:
+- analytics
+- campaign tracking
+- referral-source visibility
+- attribution quality
+- follow-up discipline</p>
+<p>This report is not for:
+- true active census
+- final discharge analysis
+- long-term lifecycle redesign
+- line-of-business retention modeling</p>
+<h2 id="fields-to-export-if-available">Fields to export if available</h2>
+<ul>
+<li>record ID</li>
+<li>created date</li>
+<li>updated date</li>
+<li>owner or assigned user</li>
+<li>lead source</li>
+<li>campaign name</li>
+<li>referral source</li>
+<li>current status</li>
+<li>lead or referral stage</li>
+<li>next follow-up date</li>
+<li>last contact date</li>
+<li>notes or outcome field if exportable without PHI risk</li>
+</ul>
+<h2 id="questions-the-report-should-answer">Questions the report should answer</h2>
+<h3 id="volume">Volume</h3>
+<ul>
+<li>How many leads were created in the past 30 days?</li>
+<li>How many referrals were created in the past 30 days?</li>
+<li>How did volume shift week to week?</li>
+</ul>
+<h3 id="attribution">Attribution</h3>
+<ul>
+<li>What percent of records have a lead source?</li>
+<li>What percent have a campaign name?</li>
+<li>What percent have a referral source?</li>
+<li>Which sources are producing the most volume?</li>
+<li>Which campaigns are missing usable attribution?</li>
+</ul>
+<h3 id="workflow">Workflow</h3>
+<ul>
+<li>How many records have overdue follow-up?</li>
+<li>Which owners have the largest overdue queues?</li>
+<li>Which statuses are being used as catch-all buckets?</li>
+</ul>
+<h3 id="reporting-trust">Reporting trust</h3>
+<ul>
+<li>Which current status buckets look too mixed to use as KPIs?</li>
+<li>Is <code>Authorized</code> being used in a way that can mislead reporting?</li>
+<li>Are there contradictions between top-level status and practical workflow?</li>
+</ul>
+<h2 id="first-output-format">First output format</h2>
+<p>Use the first pass to produce:
+- a short executive summary
+- a KPI scorecard
+- a source and campaign table
+- a referral-source table
+- a follow-up risk section
+- a note on status-bucket trust issues</p>
+<h2 id="if-live-pull-is-still-blocked">If live pull is still blocked</h2>
+<p>Fallback options:
+- a CSV or spreadsheet export from Avi or IT
+- a manual report export from the CRM UI
+- a screen-share walkthrough where the needed filters and columns are captured</p>
+          </article>
+        </section>
+      </main>
+      <footer class="footer">
+        Published from the repo markdown in <code>mktg-context</code>.
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CRM required fields and handoffs | Evo MKT OS</title>
+    <link rel="stylesheet" href="../assets/site.css">
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <div class="topbar-inner">
+          <a class="brand" href="../index.html">OS Index</a>
+          <nav class="nav">
+            <a href="../all-docs.html">All docs</a>
+          </nav>
+        </div>
+      </header>
+      <div class="meta">04_crm_management/crm_required_fields.md</div>
+      <main class="page">
+        <section class="card">
+          <article>
+<h1 id="crm-required-fields-and-handoffs">CRM required fields and handoffs</h1>
+<p>Operational companion to <a href="../05_attribution/tracking_rules.html">tracking_rules.md</a> and <a href="lead_flow.html">lead_flow.md</a>. Goal: CRM is the spine for marketing accountability, not a spreadsheet graveyard.</p>
+<h2 id="object-model-working">Object model (working)</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Referral source account</td>
+<td>Hospital, SNF, ALF, MD office, case manager, MLTC plan, community partner</td>
+</tr>
+<tr>
+<td>Owner</td>
+<td>Liaison / field marketer / digital owner</td>
+</tr>
+<tr>
+<td>Lead / referral record</td>
+<td>Demand unit with channel, campaign, source, stage, next action</td>
+</tr>
+<tr>
+<td>Activity log</td>
+<td>Field or digital touch tied to account + outcome</td>
+</tr>
+<tr>
+<td>Handoff event</td>
+<td>Marketing → intake timestamp and status</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="required-at-create">Required at create</h2>
+<ul>
+<li>Channel (canonical picklist)</li>
+<li>Owner</li>
+<li>Stage</li>
+<li>Next action + due date (if open)</li>
+<li>Campaign (when campaign-eligible)</li>
+<li>Referral source (when at referral stage)</li>
+</ul>
+<h2 id="hygiene-product-weekly-defects">Hygiene product (weekly defects)</h2>
+<p>Treat these as a product backlog, not occasional cleanup:</p>
+<ol>
+<li>Unknown / blank channel or source</li>
+<li>Missing campaign on paid or named initiatives</li>
+<li>Missing referral source on referrals</li>
+<li>Missing next action on open records</li>
+<li>Overdue follow-ups</li>
+<li>First-touch overwrites detected</li>
+<li>Status contradictions</li>
+<li>Stale handoffs (accepted SLA breached)</li>
+</ol>
+<p>Publish counts on the weekly decision pack. Unknown source is never a valid channel segment.</p>
+<h2 id="handoff-sla-working-default">Handoff SLA (working default)</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Expectation</th>
+<th>Metric</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Marketing marks ready for intake</td>
+<td>Timestamp set</td>
+<td>Handoff volume</td>
+</tr>
+<tr>
+<td>Intake accepts or returns</td>
+<td>Status set within agreed SLA</td>
+<td>Accept / return rate</td>
+</tr>
+<tr>
+<td>Open past SLA</td>
+<td>Appears on stale queue</td>
+<td>Stale open count</td>
+</tr>
+</tbody>
+</table></div>
+<p>Adjust SLA hours only with ops agreement; document the signed value in the stakeholder decision map.</p>
+<h2 id="hipaa-aware-hygiene">HIPAA-aware hygiene</h2>
+<ul>
+<li>Marketing CRM holds the minimum needed for attribution and follow-up.</li>
+<li>Do not paste PHI into ad platforms, AI prompts, dashboards shared broadly, or chat summaries.</li>
+<li>Prefer account-level and aggregate reporting in leadership packs.</li>
+<li>Credentials and patient identifiers stay out of repo docs and report narratives.</li>
+</ul>
+<h2 id="low-risk-enforcement-sequence">Low-risk enforcement sequence</h2>
+<ol>
+<li>Required-field checks on new creates</li>
+<li>Weekly missing-source / missing-campaign queues</li>
+<li>Overdue and missing next-action watchlists</li>
+<li>Freeze first-touch overwrites where permissions allow</li>
+<li>Only then consider structural status-model redesign</li>
+</ol>
+<p>See <a href="low_risk_wins.html">low_risk_wins.md</a>.</p>
+          </article>
+        </section>
+      </main>
+      <footer class="footer">
+        Published from the repo markdown in <code>mktg-context</code>.
+      </footer>
+    </div>
+  </body>
+</html>

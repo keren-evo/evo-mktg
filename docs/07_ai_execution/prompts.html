@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI prompt library | Evo MKT OS</title>
+    <link rel="stylesheet" href="../assets/site.css">
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <div class="topbar-inner">
+          <a class="brand" href="../index.html">OS Index</a>
+          <nav class="nav">
+            <a href="../all-docs.html">All docs</a>
+          </nav>
+        </div>
+      </header>
+      <div class="meta">07_ai_execution/prompts.md</div>
+      <main class="page">
+        <section class="card">
+          <article>
+<h1 id="ai-prompt-library">AI prompt library</h1>
+<p>Paste only aggregate or de-identified inputs. Never include PHI, credentials, or patient identifiers.</p>
+<h2 id="weekly-decision-pack-brief">Weekly decision pack brief</h2>
+<p>You are drafting a leadership decision pack for NY home healthcare marketing.
+Input: the filled weekly scorecard tables (referrals, SOC, cost per referral, cost per SOC by channel, CRM defects, field yield).
+Rules:
+- Exactly three findings: what is working, what is weak, one reallocation or fix
+- Prefer cost per SOC over CPL
+- If intake→auth→SOC is weak, say whether it looks marketing vs ops/payer
+- Mark directional metrics as caveated
+- Keep the whole brief under one page
+Output: executive summary, one channel table rewrite if needed, actions with owners.</p>
+<h2 id="monthly-stop-continue-double">Monthly stop / continue / double</h2>
+<p>Using the monthly trend scorecard, recommend stop / continue / double per channel or initiative.
+Require evidence from referrals, SOC, cost per SOC, concentration, and CRM defect trends.
+Do not invent census or discharge metrics.</p>
+<h2 id="anomaly-assist">Anomaly assist</h2>
+<p>Given this period-over-period export summary, list anomalies only:
+- volume spikes/drops
+- CPL improving while cost per SOC worsens
+- coverage rate drops (source, campaign, referral source)
+- field activity up with referrals flat
+- aging / overdue spikes
+For each anomaly: likely cause hypothesis, what to check next, whether it is marketing or ops.</p>
+<h2 id="crm-defect-queue">CRM defect queue</h2>
+<p>From this defect count table, produce a prioritized cleanup queue:
+unknown source, missing campaign, missing referral source, missing next action, overdue follow-up, stale handoffs, status contradictions.
+For each: why it hurts attribution or SOC visibility, owner role, effort (low/med).</p>
+<h2 id="campaign-naming-normalize">Campaign naming normalize</h2>
+<p>Rewrite these campaign names to match taxonomy:
+channel / initiative / geo / creative.
+Return old → new mapping. Do not invent channels outside the canonical picklist.</p>
+<h2 id="facility-one-pager">Facility one-pager</h2>
+<p>Draft a one-page leave-behind for a NY home healthcare liaison visiting a [hospital/SNF/ALF/MD office].
+Include: who we serve, service area, how to refer, what happens after referral, contact.
+Tone: practical, not hype. No clinical overclaim. No PHI examples.</p>
+<h2 id="follow-up-email-variants">Follow-up email variants</h2>
+<p>Write three short follow-up emails for a [discharge planner / case manager / MD office / MLTC contact] after a liaison visit.
+Goal: make the referral path obvious. Include subject lines. Keep each under 120 words.</p>
+<h2 id="video-concept-referral-relationship">Video concept (referral relationship)</h2>
+<p>Create 3 short video concepts for strengthening referral relationships (not consumer virality).
+For each: hook, 20–40s outline, CTA, who it is for (liaison leave-behind vs partner webinar).
+No patient stories with identifiable detail.</p>
+<h2 id="funnel-drop-diagnosis">Funnel drop diagnosis</h2>
+<p>Where is the biggest drop between Activity → Referral → Intake → Auth → SOC?
+Explain likely cause, whether marketing owns the fix, and the smallest next action.
+Use only the numbers provided.</p>
+<h2 id="growth-readiness-system-check">Growth-readiness system check</h2>
+<p>Review this initiative as one connected system:
+- website traffic and lead capture
+- Meta/Facebook/Instagram tracking
+- CRM attribution and workflow visibility
+- referral / field flow
+- leadership reporting
+Explain what is connected, what is broken, what to fix first. Prefer hygiene and taxonomy before redesign.</p>
+          </article>
+        </section>
+      </main>
+      <footer class="footer">
+        Published from the repo markdown in <code>mktg-context</code>.
+      </footer>
+    </div>
+  </body>
+</html>

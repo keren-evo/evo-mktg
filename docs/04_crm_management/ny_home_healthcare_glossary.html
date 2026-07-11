@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NY home healthcare glossary | Evo MKT OS</title>
+    <link rel="stylesheet" href="../assets/site.css">
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <div class="topbar-inner">
+          <a class="brand" href="../index.html">OS Index</a>
+          <nav class="nav">
+            <a href="../all-docs.html">All docs</a>
+          </nav>
+        </div>
+      </header>
+      <div class="meta">04_crm_management/ny_home_healthcare_glossary.md</div>
+      <main class="page">
+        <section class="card">
+          <article>
+<h1 id="ny-home-healthcare-glossary">NY home healthcare glossary</h1>
+<p>This glossary is for analytics and CRM interpretation, not legal or clinical documentation. Every term here exists because it changes how a metric should be read.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Plain-English meaning</th>
+<th>Where it shows up in CRM work</th>
+<th>Why it matters for reporting</th>
+<th>Common reporting mistake</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lead</td>
+<td>A contact captured before meaningful referral work is underway.</td>
+<td>Lead creation, source tagging, campaign tagging, early outreach.</td>
+<td>This is the top of the funnel.</td>
+<td>Counting all leads as referral opportunities.</td>
+</tr>
+<tr>
+<td>Qualifying</td>
+<td>The stage where staff are checking whether the person is real, reachable, and worth moving into referral work.</td>
+<td>Outreach, contact attempts, early triage.</td>
+<td>Separates raw demand from workable demand.</td>
+<td>Treating "in progress" as a clean referral stage when it still includes qualification noise.</td>
+</tr>
+<tr>
+<td>Referral</td>
+<td>A person actively being worked toward care, but not yet confirmed active with the agency.</td>
+<td>Episode or status logic, intake opening, follow-up.</td>
+<td>This is the main pre-service pipeline.</td>
+<td>Mixing referral volume with active-patient volume.</td>
+</tr>
+<tr>
+<td>Intake</td>
+<td>The operational work required to move a referral toward service.</td>
+<td>Intake object, documents, NYIA, payer steps, coordination.</td>
+<td>Intake bottlenecks explain why referrals do not become active.</td>
+<td>Treating intake status as the master patient lifecycle.</td>
+</tr>
+<tr>
+<td>Authorization</td>
+<td>Payer approval for a specific service.</td>
+<td>Authorization record, start and end dates, approved hours, LOB.</td>
+<td>It is important for readiness and risk, but it is not the same thing as census.</td>
+<td>Reporting authorized records as active patients.</td>
+</tr>
+<tr>
+<td>SOC</td>
+<td>Start of care. The first confirmed service date.</td>
+<td>Intake completion, patient activation logic, service-line activation.</td>
+<td>This is often the cleanest line between pre-service and active service.</td>
+<td>Using anticipated SOC or payer approval as if service has already started.</td>
+</tr>
+<tr>
+<td>Anticipated SOC</td>
+<td>Planned start date before service is confirmed.</td>
+<td>Intake tracking, scheduling readiness.</td>
+<td>Useful for stall detection.</td>
+<td>Counting anticipated starts as active service.</td>
+</tr>
+<tr>
+<td>Active</td>
+<td>A patient the agency is actually responsible for servicing.</td>
+<td>Episode status, service-line logic, coordinator reporting.</td>
+<td>Core driver of census and operations reporting.</td>
+<td>Using the word loosely when the team has not agreed on the entry rule.</td>
+</tr>
+<tr>
+<td>Non-Authorized</td>
+<td>A patient or service line still active operationally but missing current authorization coverage.</td>
+<td>Ops risk queues, renewal follow-up.</td>
+<td>Shows exposure and cleanup need.</td>
+<td>Treating it as automatically dropped or discharged.</td>
+</tr>
+<tr>
+<td>Dropped Off Referral</td>
+<td>A person who exited before becoming an active patient.</td>
+<td>Referral terminal state, outcome tracking.</td>
+<td>This is pre-active leakage.</td>
+<td>Mixing it with discharge or failed service lines.</td>
+</tr>
+<tr>
+<td>Discharged</td>
+<td>A patient who was previously active and then left service.</td>
+<td>Terminal episode state, outcome tracking, discharge date.</td>
+<td>This is retention and churn reporting.</td>
+<td>Using it for cases that never became active.</td>
+</tr>
+<tr>
+<td>Outcome</td>
+<td>Structured reason for a drop or discharge event.</td>
+<td>Terminal picklist, outcome reporting.</td>
+<td>Makes attrition analysis possible.</td>
+<td>Using free text or mixed meanings that cannot be rolled up cleanly.</td>
+</tr>
+<tr>
+<td>LOB</td>
+<td>Line of business. The service type or program track involved.</td>
+<td>LTC, custodial, private pay, NHTD, OPWDD, short-term care.</td>
+<td>LOB determines routing, risk, and valid comparisons.</td>
+<td>Assuming one person equals one service line.</td>
+</tr>
+<tr>
+<td>Gold LOB</td>
+<td>The core long-term service lines that should drive primary patient reporting.</td>
+<td>Long-term care, custodial, private pay, and similar core programs.</td>
+<td>Helps keep census and sales reporting focused on the main business.</td>
+<td>Letting short-term or outsourced lines inflate core totals.</td>
+</tr>
+<tr>
+<td>Short-Term Care</td>
+<td>Temporary care that may run in parallel with the main long-term lifecycle.</td>
+<td>Skilled or short-term routing, outsourced cases, temporary service.</td>
+<td>Useful for operations, but often not a clean fit for the main census story.</td>
+<td>Counting short-term only cases as long-term active patients.</td>
+</tr>
+<tr>
+<td>Third-Party Referral</td>
+<td>A case routed to another agency rather than retained as a Link-serviced patient.</td>
+<td>Skilled referrals, outsourced work, partner routing.</td>
+<td>It matters for referral handling, not patient census.</td>
+<td>Counting it as retained active volume.</td>
+</tr>
+<tr>
+<td>Medicaid Ticket</td>
+<td>A parallel eligibility or application track.</td>
+<td>Medicaid object or workflow, deferred or approved states.</td>
+<td>It can explain delays without redefining patient status.</td>
+<td>Treating Medicaid stages as the main lifecycle.</td>
+</tr>
+<tr>
+<td>NYIA</td>
+<td>A gate or review step that can block progress before service starts.</td>
+<td>Intake hold logic, scheduling, authorization readiness.</td>
+<td>NYIA delays can create false pipeline optimism.</td>
+<td>Leaving cases in generic "in progress" without exposing the hold reason.</td>
+</tr>
+<tr>
+<td>Hold</td>
+<td>A temporary pause on progress that should not be mistaken for closure.</td>
+<td>Intake pauses, waiting periods, patient availability issues.</td>
+<td>Useful for aging analysis and queue management.</td>
+<td>Hiding paused cases inside general in-progress counts.</td>
+</tr>
+<tr>
+<td>Census</td>
+<td>The count of patients the agency should consider truly active.</td>
+<td>Leadership dashboards, staffing, revenue planning.</td>
+<td>This is one of the most sensitive metrics in the system.</td>
+<td>Using authorized count as census.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="how-to-use-this-file">How to use this file</h2>
+<ul>
+<li>If a stakeholder uses one of these terms loosely, pause and restate the term in plain English before using it in a metric.</li>
+<li>If a report relies on a term that does not yet have owner sign-off, mark the metric as directional or blocked.</li>
+<li>If a new term appears often in CRM conversations, add it here before turning it into a KPI.</li>
+</ul>
+          </article>
+        </section>
+      </main>
+      <footer class="footer">
+        Published from the repo markdown in <code>mktg-context</code>.
+      </footer>
+    </div>
+  </body>
+</html>

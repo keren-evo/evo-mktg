@@ -18,11 +18,13 @@ These wins are the current CRM-phase improvements inside the broader approved gr
 | Create a baseline snapshot pack | Baselines can be collected before the final redesign. | Gives the team a before-and-after reference. | Low | Export access. |
 
 ## Suggested first sequence
-1. Missing source and campaign cleanup queue.
-2. Overdue follow-up watchlist.
-3. Referral-source completeness check.
-4. Metric-readiness labeling in daily and weekly reports.
-5. Contradiction queue for status cleanup.
+1. Freeze funnel + taxonomy ([funnel_definitions.md](../01_reporting_system/funnel_definitions.md), [tracking_rules.md](../05_attribution/tracking_rules.md), [crm_required_fields.md](./crm_required_fields.md)).
+2. Missing source and campaign cleanup queue (unknown source = defect).
+3. Overdue follow-up and missing next-action watchlists.
+4. Referral-source completeness check.
+5. Metric-readiness labeling in daily, weekly, and monthly reports.
+6. Contradiction queue for status cleanup.
+7. Dual-engine cost-per-SOC comparison once SOC extract is directional-trusted.
 
 ## Wins to avoid for now
 - Full status-model redesign.

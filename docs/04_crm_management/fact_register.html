@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CRM fact register | Evo MKT OS</title>
+    <link rel="stylesheet" href="../assets/site.css">
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <div class="topbar-inner">
+          <a class="brand" href="../index.html">OS Index</a>
+          <nav class="nav">
+            <a href="../all-docs.html">All docs</a>
+          </nav>
+        </div>
+      </header>
+      <div class="meta">04_crm_management/fact_register.md</div>
+      <main class="page">
+        <section class="card">
+          <article>
+<h1 id="crm-fact-register">CRM fact register</h1>
+<p>This file separates what is known from what is assumed so analytics work can move without pretending the CRM model is already settled.</p>
+<h2 id="confirmed-facts">Confirmed facts</h2>
+<ul>
+<li>An approved proposal existed for a broader growth-readiness system connecting website traffic, Facebook/Instagram activity, CRM integration, and leadership reporting.</li>
+<li>The originally expected working lane leaned more toward website analytics, social and Meta tracking, attribution, and dashboards than CRM status design alone.</li>
+<li>After a conversation with Hillel, the working focus shifted into CRM-first investigation.</li>
+<li>The current role is expected to improve marketing visibility, CRM accuracy, attribution discipline, and leadership-ready reporting.</li>
+<li>Nexus CRM uses a person or episode-style record that spans first contact, referral work, authorization, active service, and terminal outcomes.</li>
+<li>The current system is mixing multiple business questions into too few status fields.</li>
+<li>Discovery found a gap between roughly <code>1,960</code> "authorized" records and roughly <code>1,200-1,300</code> true active census.</li>
+<li>Authorization does not reliably mean active service.</li>
+<li>Current <code>Episode.status</code> values include <code>New</code>, <code>Lead</code>, <code>Active</code>, <code>Converted</code>, <code>On Hold</code>, <code>Dropped</code>, and <code>Discharged</code>.</li>
+<li>Current <code>Episode.leadStage</code> values include <code>None</code>, <code>New</code>, <code>In Progress</code>, <code>Dropped Off</code>, and <code>Converted</code>.</li>
+<li><code>Authorization.baseStatus</code> is currently a free-text string, which creates data integrity risk.</li>
+<li>Legacy patient-level statuses such as <code>pre-intake</code>, <code>closed</code>, <code>authorized</code>, and <code>in-progress</code> are still affecting interpretation.</li>
+<li>One service line can change without ending the whole patient relationship.</li>
+<li>No production CRM changes should be treated as approved until the status framework is signed off.</li>
+</ul>
+<h2 id="working-assumptions">Working assumptions</h2>
+<ul>
+<li>New York is the reference workflow. Other markets should follow after New York is stable.</li>
+<li>The episode-level record is the best candidate for the master lifecycle layer.</li>
+<li>The cleanest reporting rollup is still <code>Referral -&gt; Active -&gt; Discharged</code>, even if operations need more detail underneath.</li>
+<li>True active census should require more than authorization alone. The current recommended default is <code>ACTIVE + valid authorization + confirmed SOC</code>.</li>
+<li>Returning former patients should usually enter through a new episode rather than reopening old terminal records.</li>
+<li>Short-term or outsourced care should not inflate long-term patient counts or core growth reporting.</li>
+<li>Daily and weekly reporting should use trusted metrics first, with caveats where the business meaning is still unstable.</li>
+</ul>
+<h2 id="open-questions">Open questions</h2>
+<ul>
+<li>What is the final threshold for <code>Active</code>: confirmed SOC or cleared-to-start?</li>
+<li>What are the final allowed values for <code>ReferralOutcome</code> or discharge reasons?</li>
+<li>Is the failed NYIA wait period <code>180 days</code>, <code>6 months</code>, or something else?</li>
+<li>Does Nexus model one episode per patient or one episode per line of business?</li>
+<li>Which three objects currently share the <code>LeadStatus</code> picklist?</li>
+<li>What is the source of truth for active census validation: CRM, EVV, billing, or a hybrid check?</li>
+<li>What is the final rule for <code>CDPAP</code> records after the sunset cohort cleanup?</li>
+<li>When a patient has multiple open lines of business, how should the primary line be chosen for reporting?</li>
+<li>What is the final grace period for expired authorization when service is still active?</li>
+</ul>
+<h2 id="decisions-owned-by-someone-else">Decisions owned by someone else</h2>
+<h3 id="joel-and-operations">Joel and operations</h3>
+<ul>
+<li>What each lifecycle state means in real operations.</li>
+<li>What counts as active service.</li>
+<li>How NYIA, holds, reactivation, and drop reasons should behave.</li>
+<li>How to treat mixed cases such as one active line and one dropped line.</li>
+</ul>
+<h3 id="avi-and-crm-implementation">Avi and CRM implementation</h3>
+<ul>
+<li>What the object model can support without workarounds.</li>
+<li>How picklists, validation rules, automations, and recalculation hooks should be built.</li>
+<li>How to export baseline data and map legacy values safely.</li>
+</ul>
+<h3 id="leadership">Leadership</h3>
+<ul>
+<li>When the framework is signed enough to move from analysis into implementation.</li>
+<li>What level of certainty is required before dashboards are treated as decision-grade.</li>
+<li>Whether Phase 1 read-only audit work can continue before broader status decisions are finalized.</li>
+</ul>
+<h3 id="angelo-intake-ops-and-frontline-users">Angelo, intake, ops, and frontline users</h3>
+<ul>
+<li>Which follow-up rules are practical in day-to-day use.</li>
+<li>Which dashboard views matter most to sales, intake, and operations.</li>
+<li>Where the current workflow breaks down in real usage rather than in theory.</li>
+</ul>
+<h2 id="implications-for-analytics">Implications for analytics</h2>
+<ul>
+<li>Attribution coverage, referral flow, follow-up gaps, and pre-active leakage can be measured now.</li>
+<li>Census, conversion to active, and discharge reporting should not be treated as clean KPIs until definitions are signed.</li>
+<li>Draft architecture notes are useful inputs, but they are not evidence on their own.</li>
+<li>The current CRM artifacts are the present phase of the work, not the whole approved project.</li>
+<li>CRM cleanup should ultimately reconnect to website tracking, Meta/Facebook/Instagram attribution, lead capture visibility, and leadership dashboard reporting.</li>
+</ul>
+<h2 id="source-docs">Source docs</h2>
+<ul>
+<li><code>00_source/keren-overkill.md</code></li>
+<li><code>00_source/joel-pipeline.md</code></li>
+<li><code>00_source/avi-sheet.md</code></li>
+<li>Internal operating guidance in <code>.cursor/rules.md</code> is intentionally excluded from the public Pages site.</li>
+</ul>
+          </article>
+        </section>
+      </main>
+      <footer class="footer">
+        Published from the repo markdown in <code>mktg-context</code>.
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Data quality checklist | Evo MKT OS</title>
+    <link rel="stylesheet" href="../assets/site.css">
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <div class="topbar-inner">
+          <a class="brand" href="../index.html">OS Index</a>
+          <nav class="nav">
+            <a href="../all-docs.html">All docs</a>
+          </nav>
+        </div>
+      </header>
+      <div class="meta">11_quality_control/data_checks.md</div>
+      <main class="page">
+        <section class="card">
+          <article>
+<h1 id="data-quality-checklist">Data quality checklist</h1>
+<p>Keep reporting trust high while the CRM model is still being clarified. Unknown / blank source is a defect, not a channel. Align with <a href="../04_crm_management/crm_required_fields.html">crm_required_fields.md</a> and <a href="../05_attribution/tracking_rules.html">tracking_rules.md</a>.</p>
+<h2 id="daily">Daily</h2>
+<ul>
+<li>Missing lead source / channel?</li>
+<li>Unknown-source defect count moved?</li>
+<li>Missing campaign on campaign-eligible records?</li>
+<li>Missing referral source?</li>
+<li>Duplicate leads?</li>
+<li>Broken UTMs?</li>
+<li>Missing owner?</li>
+<li>Overdue follow-up?</li>
+<li>Missing next action?</li>
+<li>Contradictory statuses?</li>
+<li>Same-day fixes logged on the daily pulse?</li>
+</ul>
+<h2 id="weekly">Weekly</h2>
+<ul>
+<li>Lead source coverage drift?</li>
+<li>Campaign coverage drift?</li>
+<li>Referral source coverage drift?</li>
+<li>Unknown-source defect rate declining?</li>
+<li>Pre-SOC leakage increase?</li>
+<li>Referral aging or stalled follow-up?</li>
+<li>Stale marketing → intake handoffs?</li>
+<li>Channel naming inconsistencies vs taxonomy?</li>
+<li>Field activity logs missing account or outcome?</li>
+</ul>
+<h2 id="directional-only-checks">Directional only checks</h2>
+<ul>
+<li>Authorized pipeline jump? (not census)</li>
+<li>SOC extract vs anticipated SOC mix-up?</li>
+<li>Referral-to-SOC or referral-to-active swing?</li>
+<li>Dropped referral spike?</li>
+<li>CPL improving while cost per SOC worsens?</li>
+</ul>
+<h2 id="red-flags">Red flags</h2>
+<ul>
+<li>Sudden lead or referral drop</li>
+<li>Broken attribution</li>
+<li>Rising overdue follow-up count</li>
+<li>Authorized count presented as active census or SOC</li>
+<li>Shadow trackers created outside master taxonomy</li>
+<li>PHI appearing in exports shared for AI or dashboards</li>
+</ul>
+          </article>
+        </section>
+      </main>
+      <footer class="footer">
+        Published from the repo markdown in <code>mktg-context</code>.
+      </footer>
+    </div>
+  </body>
+</html>

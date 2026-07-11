@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Metrics readiness | Evo MKT OS</title>
+    <link rel="stylesheet" href="../assets/site.css">
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <div class="topbar-inner">
+          <a class="brand" href="../index.html">OS Index</a>
+          <nav class="nav">
+            <a href="../all-docs.html">All docs</a>
+          </nav>
+        </div>
+      </header>
+      <div class="meta">01_reporting_system/metrics_readiness.md</div>
+      <main class="page">
+        <section class="card">
+          <article>
+<h1 id="metrics-readiness">Metrics readiness</h1>
+<p>Use this file before filling any report, scorecard, or dashboard. Separate trusted reporting from metrics still blocked by business-definition or CRM-model uncertainty.</p>
+<p>Align stage language with <a href="funnel_definitions.html">funnel_definitions.md</a>. This file covers CRM, referral, digital, and field reporting inside the growth-readiness system. It should connect back to website analytics, Google Analytics, Meta/Facebook/Instagram activity, and leadership dashboards.</p>
+<h2 id="safe-to-report-now">Safe to report now</h2>
+<h3 id="attribution-hygiene">Attribution hygiene</h3>
+<ul>
+<li><code>lead_source_coverage</code> — percent of new leads with a populated source field.</li>
+<li><code>campaign_coverage</code> — percent of new leads with a populated campaign field when tagging is expected.</li>
+<li><code>referral_source_coverage</code> — percent of referral records with a usable referral-source value.</li>
+<li><code>missing_next_action</code> — open records with blank next step / next action.</li>
+</ul>
+<h3 id="flow-visibility-before-soc">Flow visibility before SOC</h3>
+<ul>
+<li><code>new_leads</code> — raw inbound lead count by day or week (creation date only).</li>
+<li><code>new_referrals</code> — records newly entering referral work.</li>
+<li><code>follow_up_overdue</code> — records missing the next expected follow-up or past due.</li>
+<li><code>pre_active_leakage</code> — records that appear to exit before confirmed active service / SOC (watchlist / trend).</li>
+<li><code>field_activity_count</code> — logged liaison touches, visits, events.</li>
+<li><code>digital_spend</code> — paid media spend by channel from ad platforms.</li>
+</ul>
+<h3 id="data-quality-and-exception-monitoring">Data quality and exception monitoring</h3>
+<ul>
+<li><code>lead_stage_missing</code> — open referral-style records with blank or unusable sub-status.</li>
+<li><code>contradictory_status_queue</code> — conflicting combinations such as drop-like states with active-like indicators.</li>
+<li><code>unknown_source_defect_count</code> — blank or "unknown" source treated as a defect, not a channel.</li>
+</ul>
+<h2 id="use-with-caveat">Use with caveat</h2>
+<ul>
+<li><code>referral_in_progress_count</code> — labels may still mix qualifying, intake, and hold.</li>
+<li><code>authorized_pipeline_count</code> — real readiness signal; not census, not SOC.</li>
+<li><code>soc_count</code> — use when confirmed SOC date is extractable; never substitute anticipated SOC.</li>
+<li><code>cost_per_referral</code> — safe only when channel/source tagging and cost allocation match the taxonomy.</li>
+<li><code>cost_per_soc</code> — primary comparison metric; caveat until SOC extract is validated.</li>
+<li><code>referral_to_soc_conversion</code> — preferred over referral-to-active when SOC is available.</li>
+<li><code>referral_to_active_conversion</code> — directional until <code>Active</code> has a signed definition.</li>
+<li><code>dropped_referral_trend</code> — check consistent "dropped" usage first.</li>
+<li><code>intake_to_auth_conversion</code> / <code>auth_to_soc_conversion</code> — often ops or payer bottlenecks; say so.</li>
+<li><code>field_referral_yield</code> — needs consistent activity logging.</li>
+<li><code>source_concentration</code> — monthly risk signal.</li>
+</ul>
+<h2 id="blocked-until-definitions-or-cleanup-are-settled">Blocked until definitions or cleanup are settled</h2>
+<ul>
+<li><code>true_active_census</code> — final <code>Active</code> definition and source-of-truth not signed.</li>
+<li><code>active_authorized_rate</code> — authorized counts include stale, pre-SOC, expired, and non-census cohorts.</li>
+<li><code>discharge_rate</code> — <code>Dropped Off</code> vs <code>Discharged</code> not stable.</li>
+<li><code>discharge_reason_mix</code> — outcome values not finalized.</li>
+<li><code>line_of_business_retention</code> — service-line and primary-LOB rules need owner decisions.</li>
+<li><code>census_by_coordinator</code> — depends on unresolved active-census definition.</li>
+</ul>
+<h2 id="reporting-rules">Reporting rules</h2>
+<ul>
+<li>Daily reports lead with safe metrics and same-day hygiene fixes.</li>
+<li>Weekly decision packs may include caveat metrics only with plain-English caveats.</li>
+<li>Monthly packs add trends, concentration, and stop / continue / double.</li>
+<li>Blocked metrics appear only in "not decision-ready" or discovery notes.</li>
+<li>If a metric can move budget, territory, staffing, or process, do not present it as trusted unless it is safe (or directional with an explicit caveat for SOC/CPA).</li>
+</ul>
+<h2 id="efficiency-rule">Efficiency rule</h2>
+<p>If a report does not change a budget, territory, message, or CRM process decision, stop producing it.</p>
+<h2 id="immediate-reporting-set">Immediate reporting set</h2>
+<ul>
+<li>Lead count by source</li>
+<li>Referral count by referral source and by channel</li>
+<li>Digital spend and field activity</li>
+<li>Missing source / campaign / referral-source rates</li>
+<li>Unknown-source defect count</li>
+<li>Follow-up overdue and missing next-action counts</li>
+<li>Pre-active leakage watchlist</li>
+<li>Status contradiction watchlist</li>
+<li>Cost per referral by channel (when tagged)</li>
+<li>SOC and cost per SOC by channel (directional until validated)</li>
+</ul>
+          </article>
+        </section>
+      </main>
+      <footer class="footer">
+        Published from the repo markdown in <code>mktg-context</code>.
+      </footer>
+    </div>
+  </body>
+</html>

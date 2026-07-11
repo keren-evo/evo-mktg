@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lead and referral flow | Evo MKT OS</title>
+    <link rel="stylesheet" href="../assets/site.css">
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <div class="topbar-inner">
+          <a class="brand" href="../index.html">OS Index</a>
+          <nav class="nav">
+            <a href="../all-docs.html">All docs</a>
+          </nav>
+        </div>
+      </header>
+      <div class="meta">04_crm_management/lead_flow.md</div>
+      <main class="page">
+        <section class="card">
+          <article>
+<h1 id="lead-and-referral-flow">Lead and referral flow</h1>
+<p>Use this file to analyze the pre-SOC funnel. Keep patient-census questions out unless the Active definition is signed.</p>
+<p>Business funnel (decision language): Activity → Referral → Intake → Auth → SOC → Retention. See <a href="../01_reporting_system/funnel_definitions.html">funnel_definitions.md</a>.</p>
+<p>This is the lead and referral layer of the growth-readiness system. Connect campaign, website, referral, and CRM flow rather than treating pre-SOC movement as CRM-only.</p>
+<h2 id="working-crm-path">Working CRM path</h2>
+<pre><code class="language-text">Lead -&gt; Qualifying -&gt; Referral -&gt; Intake / Auth work -&gt; SOC -&gt; Active
+</code></pre>
+<p>Map CRM stages to the business funnel in funnel_definitions.md. Prefer <strong>SOC</strong> over <strong>Active</strong> for marketing outcome when the SOC date is reliable.</p>
+<h2 id="guardrails">Guardrails</h2>
+<ul>
+<li><code>Active</code> remains a caution area for analytics until signed.</li>
+<li><code>Authorized</code> is readiness, not census and not SOC.</li>
+<li>Anticipated SOC is stall detection only.</li>
+<li>Use this file mainly for movement before confirmed service.</li>
+</ul>
+<h2 id="safe-flow-checks">Safe flow checks</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Stage or signal</th>
+<th>Volume</th>
+<th>Confidence</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Leads created</td>
+<td></td>
+<td>High</td>
+<td></td>
+</tr>
+<tr>
+<td>Qualified or workable leads</td>
+<td></td>
+<td>Medium</td>
+<td>Depends on local workflow usage.</td>
+</tr>
+<tr>
+<td>Referrals created</td>
+<td></td>
+<td>High</td>
+<td></td>
+</tr>
+<tr>
+<td>Follow-up overdue</td>
+<td></td>
+<td>High</td>
+<td></td>
+</tr>
+<tr>
+<td>Missing next action</td>
+<td></td>
+<td>High</td>
+<td>Defect metric.</td>
+</tr>
+<tr>
+<td>Pre-SOC / pre-active leakage</td>
+<td></td>
+<td>Medium</td>
+<td>Watchlist metric.</td>
+</tr>
+<tr>
+<td>Marketing → intake handoffs</td>
+<td></td>
+<td>Medium</td>
+<td>Needs handoff timestamp usage.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="directional-conversion-checks">Directional conversion checks</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Path</th>
+<th>Volume</th>
+<th>Conversion</th>
+<th>Caveat</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lead → Referral</td>
+<td></td>
+<td></td>
+<td>Qualification logic may vary by user.</td>
+</tr>
+<tr>
+<td>Referral → Intake</td>
+<td></td>
+<td></td>
+<td>Ops capacity and eligibility.</td>
+</tr>
+<tr>
+<td>Intake → Auth</td>
+<td></td>
+<td></td>
+<td>Often payer / NYIA / docs—not pure marketing.</td>
+</tr>
+<tr>
+<td>Auth → SOC</td>
+<td></td>
+<td></td>
+<td>Scheduling and staffing can dominate.</td>
+</tr>
+<tr>
+<td>Referral → SOC</td>
+<td></td>
+<td></td>
+<td>Preferred marketing outcome path.</td>
+</tr>
+<tr>
+<td>Referral → Active</td>
+<td></td>
+<td></td>
+<td>Active definition may still be unsigned.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="problem-areas">Problem areas</h2>
+<ul>
+<li>Stage:</li>
+<li>Cause (marketing vs ops vs payer):</li>
+<li>Owner:</li>
+</ul>
+<h2 id="fixes">Fixes</h2>
+<ul>
+<li>Improve:</li>
+<li>Clean up:</li>
+<li>Escalate decision:</li>
+</ul>
+          </article>
+        </section>
+      </main>
+      <footer class="footer">
+        Published from the repo markdown in <code>mktg-context</code>.
+      </footer>
+    </div>
+  </body>
+</html>

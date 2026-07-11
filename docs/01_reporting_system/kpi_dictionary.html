@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KPI dictionary | Evo MKT OS</title>
+    <link rel="stylesheet" href="../assets/site.css">
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <div class="topbar-inner">
+          <a class="brand" href="../index.html">OS Index</a>
+          <nav class="nav">
+            <a href="../all-docs.html">All docs</a>
+          </nav>
+        </div>
+      </header>
+      <div class="meta">01_reporting_system/kpi_dictionary.md</div>
+      <main class="page">
+        <section class="card">
+          <article>
+<h1 id="kpi-dictionary">KPI dictionary</h1>
+<p>Use this file with <a href="metrics_readiness.html">metrics_readiness.md</a> and <a href="funnel_definitions.html">funnel_definitions.md</a>. A KPI belongs in leadership reporting only if its business meaning is stable enough for a decision.</p>
+<p>This dictionary covers the CRM, referral, digital, and field layers of the growth-readiness system. Pair CRM KPIs with website, Google Analytics, Meta/Facebook/Instagram, and leadership dashboard metrics as those layers reconnect.</p>
+<h2 id="north-star-kpis">North-star KPIs</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>KPI</th>
+<th>Plain-English definition</th>
+<th>Primary use</th>
+<th>Cadence</th>
+<th>Readiness</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Referrals created</td>
+<td>Count of records that entered referral work in the period.</td>
+<td>Demand visibility.</td>
+<td>Daily, weekly, monthly</td>
+<td>Safe</td>
+<td>Volume, not active-patient proxy.</td>
+</tr>
+<tr>
+<td>SOC count</td>
+<td>Confirmed starts of care in the period.</td>
+<td>True marketing outcome.</td>
+<td>Weekly, monthly</td>
+<td>Directional until extract is validated</td>
+<td>Prefer confirmed SOC over anticipated SOC.</td>
+</tr>
+<tr>
+<td>Cost per referral</td>
+<td>Spend or field cost ÷ referrals.</td>
+<td>Efficiency by channel.</td>
+<td>Weekly, monthly</td>
+<td>Safe when cost and referral source are tagged</td>
+<td>Requires taxonomy discipline.</td>
+</tr>
+<tr>
+<td>Cost per SOC</td>
+<td>Spend or field cost ÷ SOC.</td>
+<td>Primary channel comparison.</td>
+<td>Weekly, monthly</td>
+<td>Directional until SOC trusted</td>
+<td>Do not optimize to CPL alone.</td>
+</tr>
+<tr>
+<td>Referral → SOC conversion</td>
+<td>Share of referrals that reach confirmed SOC.</td>
+<td>Funnel quality.</td>
+<td>Weekly, monthly</td>
+<td>Directional</td>
+<td>State Active/SOC caveat when using Active as proxy.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="safe-kpis">Safe KPIs</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>KPI</th>
+<th>Plain-English definition</th>
+<th>Primary use</th>
+<th>Cadence</th>
+<th>Readiness</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Leads created</td>
+<td>Count of new lead records created in the period.</td>
+<td>Top-of-funnel volume.</td>
+<td>Daily, weekly</td>
+<td>Safe</td>
+<td>Break down by source and campaign when available.</td>
+</tr>
+<tr>
+<td>Lead source coverage</td>
+<td>Percent of new leads with a valid source value.</td>
+<td>Attribution hygiene.</td>
+<td>Daily, weekly</td>
+<td>Safe</td>
+<td>Missing values trigger cleanup.</td>
+</tr>
+<tr>
+<td>Campaign coverage</td>
+<td>Percent of campaign-eligible leads with a campaign value.</td>
+<td>Campaign measurement trust.</td>
+<td>Daily, weekly</td>
+<td>Safe</td>
+<td>Missing campaign data reduces ROI confidence.</td>
+</tr>
+<tr>
+<td>Referral source coverage</td>
+<td>Percent of referral records with a valid referral-source value.</td>
+<td>Referral-channel visibility.</td>
+<td>Daily, weekly</td>
+<td>Safe</td>
+<td>Doctor, facility, partner, plan visibility.</td>
+</tr>
+<tr>
+<td>Follow-up overdue count</td>
+<td>Number of open records with overdue next steps.</td>
+<td>Workflow discipline and leakage risk.</td>
+<td>Daily, weekly</td>
+<td>Safe</td>
+<td>Operational alert metric.</td>
+</tr>
+<tr>
+<td>Pre-active leakage watchlist</td>
+<td>Count of records leaving before confirmed active service / SOC.</td>
+<td>Funnel risk visibility.</td>
+<td>Weekly</td>
+<td>Safe</td>
+<td>Watchlist and trend, not final terminal-outcome truth.</td>
+</tr>
+<tr>
+<td>Status contradiction watchlist</td>
+<td>Count of records with conflicting statuses or lifecycle signals.</td>
+<td>Data quality and audit prioritization.</td>
+<td>Daily, weekly</td>
+<td>Safe</td>
+<td>Cleanup need, not business outcome volume.</td>
+</tr>
+<tr>
+<td>Missing next-action count</td>
+<td>Open marketing/intake records with blank next step.</td>
+<td>Handoff and CRM discipline.</td>
+<td>Daily, weekly</td>
+<td>Safe</td>
+<td>Defect metric.</td>
+</tr>
+<tr>
+<td>Digital spend</td>
+<td>Paid media spend in period by channel.</td>
+<td>Input for CPL / cost per SOC.</td>
+<td>Daily, weekly</td>
+<td>Safe</td>
+<td>From ad platforms.</td>
+</tr>
+<tr>
+<td>Field activity count</td>
+<td>Logged liaison touches / visits / events.</td>
+<td>Effort visibility.</td>
+<td>Daily, weekly</td>
+<td>Safe</td>
+<td>Effort, not result.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="directional-kpis">Directional KPIs</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>KPI</th>
+<th>Plain-English definition</th>
+<th>Primary use</th>
+<th>Cadence</th>
+<th>Readiness</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Referral in progress</td>
+<td>Open referral workload currently being worked.</td>
+<td>Intake capacity and aging.</td>
+<td>Daily, weekly</td>
+<td>Caveat</td>
+<td>Labels may mix qualifying, hold, and active referral work.</td>
+</tr>
+<tr>
+<td>Authorized pipeline</td>
+<td>Records with valid-looking authorization coverage.</td>
+<td>Readiness and risk visibility.</td>
+<td>Weekly</td>
+<td>Caveat</td>
+<td>Do not present as active census or SOC.</td>
+</tr>
+<tr>
+<td>Referral-to-active conversion</td>
+<td>Share of referrals that become active.</td>
+<td>Growth and intake effectiveness.</td>
+<td>Weekly, monthly</td>
+<td>Caveat</td>
+<td>Only with active-definition caveat; prefer SOC when available.</td>
+</tr>
+<tr>
+<td>Dropped referral trend</td>
+<td>Referrals leaving before service begins.</td>
+<td>Leakage trend.</td>
+<td>Weekly, monthly</td>
+<td>Caveat</td>
+<td>Depends on consistent drop terminology.</td>
+</tr>
+<tr>
+<td>Intake → Auth conversion</td>
+<td>Share of intake records reaching auth.</td>
+<td>Ops / payer bottleneck signal.</td>
+<td>Weekly, monthly</td>
+<td>Caveat</td>
+<td>Distinguish marketing vs ops failure.</td>
+</tr>
+<tr>
+<td>Auth → SOC conversion</td>
+<td>Share of authorized records reaching SOC.</td>
+<td>Scheduling / capacity signal.</td>
+<td>Weekly, monthly</td>
+<td>Caveat</td>
+<td>Often non-marketing.</td>
+</tr>
+<tr>
+<td>Field referral yield</td>
+<td>Referrals ÷ field touches (or unique sources contacted).</td>
+<td>Liaison effectiveness.</td>
+<td>Weekly, monthly</td>
+<td>Caveat</td>
+<td>Needs consistent activity logging.</td>
+</tr>
+<tr>
+<td>Source concentration</td>
+<td>Share of referrals from top N facilities/sources.</td>
+<td>Concentration risk.</td>
+<td>Monthly</td>
+<td>Caveat</td>
+<td>High concentration is a risk flag.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="blocked-kpis">Blocked KPIs</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>KPI</th>
+<th>Why blocked</th>
+<th>What must be settled first</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>True active census</td>
+<td>The active definition is still contested.</td>
+<td>Final <code>Active</code> rule and source-of-truth check.</td>
+</tr>
+<tr>
+<td>Active authorized rate</td>
+<td>Authorized counts are not a reliable active-patient proxy.</td>
+<td>Stale and non-census cohorts must be resolved.</td>
+</tr>
+<tr>
+<td>Discharge rate</td>
+<td>Terminal logic is not yet clean enough.</td>
+<td>Final split between <code>Dropped Off</code> and <code>Discharged</code>.</td>
+</tr>
+<tr>
+<td>Discharge reason mix</td>
+<td>Outcome values are not finalized.</td>
+<td>Signed terminal-outcome picklist.</td>
+</tr>
+<tr>
+<td>Active by coordinator</td>
+<td>It depends on true census logic.</td>
+<td>Same prerequisite as true active census.</td>
+</tr>
+<tr>
+<td>LOB retention</td>
+<td>Line-of-business state rules are still unresolved.</td>
+<td>Primary-LOB and service-line definitions.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="how-to-use-this-dictionary">How to use this dictionary</h2>
+<ul>
+<li>Daily reports should mostly use safe KPIs plus activity/spend outliers.</li>
+<li>Weekly decision packs lead with referrals, hygiene, leakage, and cost signals; include SOC / cost per SOC when directional caveat is stated.</li>
+<li>Monthly packs add trends, concentration, stop/continue/double.</li>
+<li>Blocked KPIs belong in discovery work, not decision-making scorecards.</li>
+</ul>
+          </article>
+        </section>
+      </main>
+      <footer class="footer">
+        Published from the repo markdown in <code>mktg-context</code>.
+      </footer>
+    </div>
+  </body>
+</html>

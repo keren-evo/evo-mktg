@@ -1,35 +1,49 @@
 # Lead and referral flow
 
-Use this file to analyze the pre-active funnel. Keep patient-census questions out of this document unless the underlying definition is signed.
+Use this file to analyze the pre-SOC funnel. Keep patient-census questions out unless the Active definition is signed.
 
-This is the lead and referral layer of the broader approved growth-readiness system. Use it to connect campaign, website, referral, and CRM flow rather than treating pre-active movement as a CRM-only question.
+Business funnel (decision language): Activity → Referral → Intake → Auth → SOC → Retention. See [funnel_definitions.md](../01_reporting_system/funnel_definitions.md).
 
-## Working flow
+This is the lead and referral layer of the growth-readiness system. Connect campaign, website, referral, and CRM flow rather than treating pre-SOC movement as CRM-only.
 
-Lead -> Qualifying -> Referral -> Active
+## Working CRM path
 
-## Guardrail
-- `Active` is still a caution area for analytics.
-- Use this file mainly to study movement before confirmed service.
+```text
+Lead -> Qualifying -> Referral -> Intake / Auth work -> SOC -> Active
+```
+
+Map CRM stages to the business funnel in funnel_definitions.md. Prefer **SOC** over **Active** for marketing outcome when the SOC date is reliable.
+
+## Guardrails
+- `Active` remains a caution area for analytics until signed.
+- `Authorized` is readiness, not census and not SOC.
+- Anticipated SOC is stall detection only.
+- Use this file mainly for movement before confirmed service.
 
 ## Safe flow checks
 | Stage or signal | Volume | Confidence | Notes |
-|--------|--------|------------|--------|
+| --- | --- | --- | --- |
 | Leads created |  | High |  |
 | Qualified or workable leads |  | Medium | Depends on local workflow usage. |
 | Referrals created |  | High |  |
 | Follow-up overdue |  | High |  |
-| Pre-active leakage |  | Medium | Good watchlist metric. |
+| Missing next action |  | High | Defect metric. |
+| Pre-SOC / pre-active leakage |  | Medium | Watchlist metric. |
+| Marketing → intake handoffs |  | Medium | Needs handoff timestamp usage. |
 
 ## Directional conversion checks
 | Path | Volume | Conversion | Caveat |
-|--------|--------|------------|--------|
-| Lead -> Referral |  |  | Qualification logic may vary by user. |
-| Referral -> Active |  |  | Active definition is not final. |
+| --- | --- | --- | --- |
+| Lead → Referral |  |  | Qualification logic may vary by user. |
+| Referral → Intake |  |  | Ops capacity and eligibility. |
+| Intake → Auth |  |  | Often payer / NYIA / docs—not pure marketing. |
+| Auth → SOC |  |  | Scheduling and staffing can dominate. |
+| Referral → SOC |  |  | Preferred marketing outcome path. |
+| Referral → Active |  |  | Active definition may still be unsigned. |
 
 ## Problem areas
 - Stage:
-- Cause:
+- Cause (marketing vs ops vs payer):
 - Owner:
 
 ## Fixes

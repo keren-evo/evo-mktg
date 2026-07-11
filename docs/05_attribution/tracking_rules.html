@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Attribution and taxonomy rules | Evo MKT OS</title>
+    <link rel="stylesheet" href="../assets/site.css">
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <div class="topbar-inner">
+          <a class="brand" href="../index.html">OS Index</a>
+          <nav class="nav">
+            <a href="../all-docs.html">All docs</a>
+          </nav>
+        </div>
+      </header>
+      <div class="meta">05_attribution/tracking_rules.md</div>
+      <main class="page">
+        <section class="card">
+          <article>
+<h1 id="attribution-and-taxonomy-rules">Attribution and taxonomy rules</h1>
+<p>One taxonomy across ads, CRM, field logs, and reporting. Shadow trackers are an efficiency tax—do not create parallel naming systems.</p>
+<p>Supports the growth-readiness chain: website → Meta/Facebook/Instagram → lead capture → referral tracking → CRM → leadership reporting. Stage language follows <a href="../01_reporting_system/funnel_definitions.html">funnel_definitions.md</a>.</p>
+<h2 id="taxonomy-acronyms">Taxonomy acronyms</h2>
+<p>Use these expansions in CRM picklists, reports, and campaign names so tags stay readable.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Acronym</th>
+<th>Expansion</th>
+<th>Where it appears in taxonomy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ALF</td>
+<td>Assisted living facility</td>
+<td>Source type <code>alf</code></td>
+</tr>
+<tr>
+<td>Auth</td>
+<td>Authorization (payer/plan approval)</td>
+<td>Funnel stage; not a channel</td>
+</tr>
+<tr>
+<td>CM</td>
+<td>Case manager</td>
+<td>Contact role on field logs; source type <code>case_manager</code></td>
+</tr>
+<tr>
+<td>CPL</td>
+<td>Cost per lead</td>
+<td>Digital efficiency; not primary outcome</td>
+</tr>
+<tr>
+<td>CPA / cost per SOC</td>
+<td>Cost per acquisition / cost per start of care</td>
+<td>Primary channel comparison</td>
+</tr>
+<tr>
+<td>CRM</td>
+<td>Customer relationship management (Nexus)</td>
+<td>System of record for tags</td>
+</tr>
+<tr>
+<td>GA</td>
+<td>Google Analytics</td>
+<td>Digital measurement input</td>
+</tr>
+<tr>
+<td>Geo</td>
+<td>Geography / service area</td>
+<td>Taxonomy layer</td>
+</tr>
+<tr>
+<td>HHC</td>
+<td>Home healthcare</td>
+<td>Campaign naming (e.g. <code>nyc_hhc_...</code>)</td>
+</tr>
+<tr>
+<td>HIPAA</td>
+<td>Health Insurance Portability and Accountability Act</td>
+<td>Hygiene constraint on what CRM stores and shares</td>
+</tr>
+<tr>
+<td>LOB</td>
+<td>Line of business</td>
+<td>Downstream ops; not a marketing channel</td>
+</tr>
+<tr>
+<td>MD</td>
+<td>Medical doctor / physician</td>
+<td>Source type <code>physician</code>; contact role</td>
+</tr>
+<tr>
+<td>MLTC</td>
+<td>Managed Long Term Care</td>
+<td>Channel <code>plan_mltc</code>; source type <code>mltc_plan</code></td>
+</tr>
+<tr>
+<td>NYIA</td>
+<td>New York Independent Assessor</td>
+<td>Intake hold; can stall pre-SOC</td>
+</tr>
+<tr>
+<td>SLA</td>
+<td>Service level agreement</td>
+<td>Marketing → intake handoff timing</td>
+</tr>
+<tr>
+<td>SNF</td>
+<td>Skilled nursing facility</td>
+<td>Source type <code>snf</code></td>
+</tr>
+<tr>
+<td>SOC</td>
+<td>Start of care (first confirmed billable visit)</td>
+<td>Marketing outcome; cost per SOC</td>
+</tr>
+<tr>
+<td>UTM</td>
+<td>Urchin Tracking Module (campaign URL tags)</td>
+<td>Digital attribution: <code>utm_source</code>, <code>utm_medium</code>, <code>utm_campaign</code>, <code>utm_content</code>, <code>utm_term</code></td>
+</tr>
+<tr>
+<td>CPC</td>
+<td>Cost per click</td>
+<td>Common <code>utm_medium</code> for paid search</td>
+</tr>
+</tbody>
+</table></div>
+<p>Broader clinical/ops terms: <a href="../04_crm_management/ny_home_healthcare_glossary.html">ny_home_healthcare_glossary.md</a>.</p>
+<h2 id="master-taxonomy">Master taxonomy</h2>
+<p>Every marketing record should resolve to these layers:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Purpose</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Channel</td>
+<td>How demand was generated</td>
+<td><code>paid_search</code>, <code>paid_social</code>, <code>display</code>, <code>email</code>, <code>website</code>, <code>field_liaison</code>, <code>facility_hospital</code>, <code>physician</code>, <code>plan_mltc</code> (Managed Long Term Care), <code>community_event</code>, <code>other</code></td>
+</tr>
+<tr>
+<td>Source</td>
+<td>Named origin account or property</td>
+<td>Hospital name, SNF (skilled nursing facility), ALF (assisted living facility), MD (physician) office, case manager (CM), MLTC plan, Meta, Google, organic web</td>
+</tr>
+<tr>
+<td>Campaign</td>
+<td>Initiative / offer / flight</td>
+<td><code>nyc_hhc_brand_2026q3</code> (HHC = home healthcare), <code>brooklyn_snf_outreach_july</code></td>
+</tr>
+<tr>
+<td>Geo</td>
+<td>Catchment (geography / service area)</td>
+<td>Borough, county, or service area code</td>
+</tr>
+<tr>
+<td>Creative / tactic</td>
+<td>Optional creative or leave-behind ID</td>
+<td>Ad set name, one-pager version, video concept ID</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="channel-picklist-canonical">Channel picklist (canonical)</h3>
+<p>Use these exact values in CRM and reporting rolls:</p>
+<ol>
+<li><code>paid_search</code></li>
+<li><code>paid_social</code></li>
+<li><code>display</code></li>
+<li><code>email</code></li>
+<li><code>website</code></li>
+<li><code>field_liaison</code></li>
+<li><code>facility_hospital</code></li>
+<li><code>physician</code> (MD offices / groups)</li>
+<li><code>plan_mltc</code> (Managed Long Term Care plans)</li>
+<li><code>community_event</code></li>
+<li><code>other</code></li>
+</ol>
+<p><code>unknown</code> / blank is a <strong>defect</strong>, not a channel. Count it weekly; do not optimize against it as if it were a segment.</p>
+<h3 id="source-type-picklist-referral-accounts">Source-type picklist (referral accounts)</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Source type</th>
+<th>Expansion / typical accounts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>hospital</code></td>
+<td>Discharge planning / case management units</td>
+</tr>
+<tr>
+<td><code>snf</code></td>
+<td>SNF = skilled nursing facility</td>
+</tr>
+<tr>
+<td><code>alf</code></td>
+<td>ALF = assisted living facility</td>
+</tr>
+<tr>
+<td><code>physician</code></td>
+<td>MD = medical doctor offices / groups</td>
+</tr>
+<tr>
+<td><code>case_manager</code></td>
+<td>CM = case manager (independent or agency)</td>
+</tr>
+<tr>
+<td><code>mltc_plan</code></td>
+<td>MLTC = Managed Long Term Care / managed care plans</td>
+</tr>
+<tr>
+<td><code>community</code></td>
+<td>Faith, senior center, event partners</td>
+</tr>
+<tr>
+<td><code>digital_property</code></td>
+<td>Web, Meta, Google (for digital-origin leads)</td>
+</tr>
+<tr>
+<td><code>other</code></td>
+<td>Everything else, sparingly</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="required-crm-fields-nexus">Required CRM fields (Nexus)</h2>
+<p>At create (or first marketing touch), require:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Rule</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lead Source / Channel</td>
+<td>Required; must match channel picklist</td>
+</tr>
+<tr>
+<td>Campaign Name</td>
+<td>Required when channel is paid, email, or named initiative</td>
+</tr>
+<tr>
+<td>Referral Source</td>
+<td>Required for referral-stage records; link to account when possible</td>
+</tr>
+<tr>
+<td>Owner</td>
+<td>Required; liaison or marketing owner</td>
+</tr>
+<tr>
+<td>Stage</td>
+<td>Required; current funnel/CRM stage</td>
+</tr>
+<tr>
+<td>Next action</td>
+<td>Required for open records</td>
+</tr>
+<tr>
+<td>Next action due</td>
+<td>Required when next action is set</td>
+</tr>
+<tr>
+<td>First touch</td>
+<td>Set once; never overwrite</td>
+</tr>
+<tr>
+<td>Last touch</td>
+<td>Update on meaningful subsequent touches</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="optional-but-recommended">Optional but recommended</h3>
+<ul>
+<li>Geo / service area</li>
+<li>Creative or collateral ID</li>
+<li>Handoff timestamp (marketing → intake)</li>
+<li>Handoff status</li>
+</ul>
+<h2 id="attribution-rules">Attribution rules</h2>
+<ol>
+<li>Every lead must have channel + (campaign when campaign-eligible).</li>
+<li>Every referral must have a referral source (account or named source).</li>
+<li>Never manually overwrite original / first-touch source.</li>
+<li>Digital: UTM <code>source</code> / <code>medium</code> / <code>campaign</code> / <code>content</code> map to channel, campaign, creative.</li>
+<li>Field: every touch logs facility/account, contact role, outcome, owner, geo.</li>
+<li>Same campaign name string in ad platforms and CRM.</li>
+<li>Separate consumer/caregiver digital traffic from referral-partner traffic when both exist.</li>
+<li>Cost allocation for cost per referral / cost per SOC uses this taxonomy only.</li>
+</ol>
+<h2 id="utm-conventions">UTM conventions</h2>
+<pre><code class="language-text">utm_source   = platform or partner (google, meta, newsletter)
+utm_medium   = channel family (cpc, paid_social, email, referral)
+utm_campaign = campaign ID matching CRM Campaign Name
+utm_content  = creative / variant ID
+utm_term     = keyword (paid search only)
+</code></pre>
+<p>Broken or missing UTMs are same-day defects on the daily pulse.</p>
+<h2 id="handoff-rules-marketing-intake">Handoff rules (marketing → intake)</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Signal</th>
+<th>Definition</th>
+<th>Reporting use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Handoff time</td>
+<td>Timestamp when marketing marks ready for intake</td>
+<td>SLA and aging</td>
+</tr>
+<tr>
+<td>Handoff status</td>
+<td>Accepted / returned / stalled</td>
+<td>Leakage and accountability</td>
+</tr>
+<tr>
+<td>Stale open</td>
+<td>Open past SLA with no stage move or next action</td>
+<td>Weekly CRM defect</td>
+</tr>
+</tbody>
+</table></div>
+<p>Stale open pipeline is a visible metric, not a feeling.</p>
+<h2 id="common-defects-weekly-count">Common defects (weekly count)</h2>
+<ul>
+<li>Missing channel / source</li>
+<li>Missing campaign on campaign-eligible records</li>
+<li>Missing referral source on referrals</li>
+<li>Duplicate leads</li>
+<li>First-touch overwrite</li>
+<li>Incorrect campaign string vs ads</li>
+<li>Field activity without account/outcome</li>
+<li>Open record with blank next action</li>
+</ul>
+<h2 id="success-test">Success test</h2>
+<p>Every SOC can be traced to a channel and, ideally, a referral source—without a hero spreadsheet rebuild.</p>
+          </article>
+        </section>
+      </main>
+      <footer class="footer">
+        Published from the repo markdown in <code>mktg-context</code>.
+      </footer>
+    </div>
+  </body>
+</html>

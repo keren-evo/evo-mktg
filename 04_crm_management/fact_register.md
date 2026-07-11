@@ -69,7 +69,7 @@ This file separates what is known from what is assumed so analytics work can mov
 - CRM cleanup should ultimately reconnect to website tracking, Meta/Facebook/Instagram attribution, lead capture visibility, and leadership dashboard reporting.
 
 ## Source docs
-- [00_source/keren-overkill.md](../00_source/keren-overkill.md)
-- [00_source/joel-pipeline.md](../00_source/joel-pipeline.md)
-- [00_source/avi-sheet.md](../00_source/avi-sheet.md)
-- [.cursor/rules.md](../.cursor/rules.md)
+- `00_source/keren-overkill.md`
+- `00_source/joel-pipeline.md`
+- `00_source/avi-sheet.md`
+- Internal operating guidance in `.cursor/rules.md` is intentionally excluded from the public Pages site.

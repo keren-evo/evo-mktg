@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Avi alignment action sheet | Evo MKT OS</title>
+    <link rel="stylesheet" href="../assets/site.css">
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <div class="topbar-inner">
+          <a class="brand" href="../index.html">OS Index</a>
+          <nav class="nav">
+            <a href="../all-docs.html">All docs</a>
+          </nav>
+        </div>
+      </header>
+      <div class="meta">04_crm_management/avi_alignment_action_sheet.md</div>
+      <main class="page">
+        <section class="card">
+          <article>
+<h1 id="avi-alignment-action-sheet">Avi alignment action sheet</h1>
+<p>This is the simplified working sheet that comes out of the July 10 alignment with Avi. It is meant to replace overbuilt execution structures with a small, plain-language operating sheet.</p>
+<h2 id="main-jd-focus">Main JD focus</h2>
+<p>The approved proposal was a broader growth-readiness build:
+- website traffic and referrals
+- tracking across website, Facebook/Instagram, and CRM
+- lead capture
+- CRM intake and cleanup
+- Meta optimization
+- leadership dashboard visibility</p>
+<p>The expected working lane was therefore wider than CRM alone: website analytics, social and Meta tracking, campaign attribution, lead capture, CRM integration, and leadership reporting.</p>
+<p>After a conversation with Hillel, the work shifted into CRM-first investigation. That made the day-to-day work much more status-heavy than the original approved proposal.</p>
+<p>The working CRM contribution should improve exports, reporting, and attribution enough to plug back into the broader growth system. It should not drift into full CRM redesign before the business meaning is clear.</p>
+<h2 id="immediate-objective">Immediate objective</h2>
+<p>Understand how the current patient and referral lifecycle works well enough to answer:
+- what the current statuses mean
+- what the proposed statuses are trying to fix
+- what is already agreed
+- what is still unresolved
+- whether the proposed structure will support reliable reporting and exports</p>
+<p>This is the current CRM phase inside the broader approved growth-readiness project, not a replacement for it.</p>
+<h2 id="current-state-to-document">Current state to document</h2>
+<h3 id="current-lead-side-statuses">Current lead-side statuses</h3>
+<ul>
+<li>New</li>
+<li>In Progress</li>
+<li>Dropped Off</li>
+<li>Converted</li>
+</ul>
+<h3 id="current-patient-side-statuses">Current patient-side statuses</h3>
+<ul>
+<li>Pre Intake</li>
+<li>In Progress</li>
+<li>Authorized</li>
+<li>Dropped Off</li>
+<li>Closed</li>
+</ul>
+<h3 id="current-line-of-business-reality">Current line-of-business reality</h3>
+<ul>
+<li>LOB statuses are separate from patient-level status.</li>
+<li>One person can have multiple service lines in different states at the same time.</li>
+<li>Current reports may mix patient-level and LOB-level meaning.</li>
+</ul>
+<h2 id="proposed-direction-to-compare-against">Proposed direction to compare against</h2>
+<h3 id="from-avis-spreadsheet">From Avi's spreadsheet</h3>
+<ul>
+<li>Lead <code>New</code> -&gt; <code>Lead</code></li>
+<li>Lead <code>In Progress</code> -&gt; <code>Qualifying</code></li>
+<li>Lead <code>Dropped Off</code> -&gt; <code>Lead Dropped Off</code></li>
+<li>Patient <code>In Progress</code> -&gt; <code>Referral In Progress</code></li>
+<li>Patient <code>Authorized</code> -&gt; <code>Active</code></li>
+<li>Patient <code>Dropped Off</code> -&gt; <code>Dropped Off</code></li>
+<li>Patient <code>Closed</code> -&gt; <code>Discharged</code></li>
+</ul>
+<h3 id="from-joels-mockup">From Joel's mockup</h3>
+<ul>
+<li>Simplified top-level flow:</li>
+<li><code>Referral</code></li>
+<li><code>Active</code></li>
+<li><code>Discharged</code></li>
+<li>Key rule:</li>
+<li>if the person never became active, they should land in <code>Dropped Off Referral</code></li>
+<li>if the person became active and later left service, they should land in <code>Discharged</code></li>
+</ul>
+<h2 id="what-seems-broadly-agreed">What seems broadly agreed</h2>
+<ul>
+<li>The top-level lifecycle should be simpler.</li>
+<li><code>Dropped Off</code> and <code>Discharged</code> should not mean the same thing.</li>
+<li>LOB status and patient-level status should not be treated as the same layer.</li>
+<li>Reporting will need supporting fields or history, not just one top-level status.</li>
+<li>The first task is to compare current state to proposed state, not to design the final ideal system.</li>
+</ul>
+<h2 id="outstanding-questions">Outstanding questions</h2>
+<ul>
+<li>What is the exact approved top-level lifecycle?</li>
+<li>What happens to <code>Pre Intake</code>?</li>
+<li>What happens to <code>Converted</code>?</li>
+<li>How should old <code>Dropped Off</code> and <code>Closed</code> records be split?</li>
+<li>When exactly does a record count as <code>Active</code>?</li>
+<li>What supporting fields are required if one consolidated <code>Dropped Off</code> status loses detail?</li>
+<li>Which reports, filters, workflows, list views, and automations depend on the old values?</li>
+<li>Which records can be mapped automatically and which need manual review?</li>
+</ul>
+<h2 id="what-you-need-to-understand">What you need to understand</h2>
+<ul>
+<li>How current records are labeled in real usage.</li>
+<li>How patient-level status interacts with LOB status.</li>
+<li>How multiple open LOBs behave on one person.</li>
+<li>How status buckets are exported today.</li>
+<li>Which existing reports are safe enough to use and which are misleading.</li>
+</ul>
+<h2 id="questions-to-take-to-people">Questions to take to people</h2>
+<h3 id="avi">Avi</h3>
+<ul>
+<li>Share the current-to-proposed status spreadsheet.</li>
+<li>Confirm the current status values that are still live in production.</li>
+<li>Clarify which reports and automations are known to depend on the old values.</li>
+<li>Clarify how data exports are best pulled right now.</li>
+</ul>
+<h3 id="joel">Joel</h3>
+<ul>
+<li>Confirm the business meaning of each current status.</li>
+<li>Confirm the intended difference between referral drop-off and discharge.</li>
+<li>Confirm how <code>Active</code> should be understood operationally.</li>
+</ul>
+<h3 id="ezra-or-ops-users">Ezra or ops users</h3>
+<ul>
+<li>Show how users decide what to do next inside the CRM.</li>
+<li>Show where LOB-level detail changes the patient-level story.</li>
+<li>Show where current screens or reports create confusion.</li>
+</ul>
+<h2 id="30-day-crm-pull-for-the-main-jd">30-day CRM pull for the main JD</h2>
+<p>The first 30-day pull is the CRM slice of the broader approved project. It should focus on the main job, not the whole lifecycle redesign.</p>
+<h3 id="pull-these-if-available">Pull these if available</h3>
+<ul>
+<li>leads created</li>
+<li>referrals created</li>
+<li>lead source</li>
+<li>campaign name</li>
+<li>referral source</li>
+<li>owner or assigned user</li>
+<li>created date</li>
+<li>last updated date</li>
+<li>next follow-up date</li>
+<li>current top-level status</li>
+<li>current lead or referral sub-status</li>
+</ul>
+<h3 id="use-the-pull-to-answer">Use the pull to answer</h3>
+<ul>
+<li>How many leads came in over the past 30 days?</li>
+<li>Which sources and campaigns are producing volume?</li>
+<li>How complete is source and campaign attribution?</li>
+<li>Which referral sources are active?</li>
+<li>Where are follow-ups being missed or delayed?</li>
+<li>Which status buckets are too messy to trust for reporting?</li>
+</ul>
+<p>Once this CRM slice is stable enough, reconnect it to website tracking, Meta/Facebook/Instagram attribution, and leadership dashboard reporting.</p>
+<h3 id="do-not-use-the-first-30-day-pull-to-overclaim">Do not use the first 30-day pull to overclaim</h3>
+<ul>
+<li>true active census</li>
+<li>clean discharge rates</li>
+<li>line-of-business retention</li>
+<li>any KPI that assumes <code>Authorized</code> equals <code>Active</code></li>
+</ul>
+<h2 id="current-blocker">Current blocker</h2>
+<ul>
+<li>Live CRM extraction is currently blocked because the stored login in <code>.cursor/rules.md</code> is being rejected by the CRM auth endpoint as invalid.</li>
+<li>Until access works, the best fallback is a recent 30-day CRM export or a refreshed login path from Avi or IT.</li>
+</ul>
+<h2 id="next-output-after-access-is-fixed">Next output after access is fixed</h2>
+<ul>
+<li>one 30-day CRM report focused on:</li>
+<li>lead volume</li>
+<li>source and campaign coverage</li>
+<li>referral-source visibility</li>
+<li>follow-up gaps</li>
+<li>status-bucket trust issues</li>
+</ul>
+          </article>
+        </section>
+      </main>
+      <footer class="footer">
+        Published from the repo markdown in <code>mktg-context</code>.
+      </footer>
+    </div>
+  </body>
+</html>
