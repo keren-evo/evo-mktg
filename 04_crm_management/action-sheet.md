@@ -1,4 +1,4 @@
-# Avi alignment action sheet
+# Post-alignment action sheet
 
 This is the simplified working sheet that comes out of the July 10 alignment with Avi. It is meant to replace overbuilt execution structures with a small, plain-language operating sheet.
 
